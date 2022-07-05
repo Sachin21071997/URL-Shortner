@@ -1,0 +1,316 @@
+.App {
+  text-align: center;
+}
+.footer{
+  position: absolute;
+  width: 1440px;
+  height: 50px;
+  
+  left: 0px;
+  top: 1461px;
+  background: #272727;
+}
+#footer_logo{
+  position: relative;
+  top:10px;
+  left: 10px;
+}
+#footer_heading{
+  position: relative;
+  left: 50px;
+  bottom: 45px;
+  font-family: 'Nunito Sans';
+  font-style: normal;
+  font-weight: 200;
+  font-size: 22px;
+  line-height: 30px;
+/* identical to box height */
+  display: flex;
+  align-items: center;
+  color: #FFFFFF;
+}
+#footer_text{
+  position: relative;
+  left: 550px;
+  bottom: 94px;
+
+  font-family: 'Nunito Sans';
+  font-style: normal;
+  font-weight: 200;
+  font-size: 22px;
+  line-height: 30px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: #FFFFFF;
+}
+.footer_social{
+  left:400px;
+  bottom:100px;
+}
+.LinkedIn{
+  height: 25px;
+  width: 30px;
+  /*width: 20px;*/
+  position: relative;
+  display: flex;
+  left: 1200px;
+  bottom: 145px;
+}
+.Github{
+  height: 25px;
+  position: relative;
+  display: flex;
+  left: 1240px;
+  bottom: 170px;
+}
+.ToolName{
+  font-family: 'Nunito Sans';
+  font-style: normal;
+  font-weight: 200;
+  font-size: 28px;
+  line-height: 38px;
+  display: flex;
+  align-items: center;
+  color: #FFFFFF;
+  position: relative;
+  bottom: 56px;
+  left: 50px;
+}
+.header_logo{
+  position: relative;
+  left: 10px;
+  top:10px;
+}
+.header{
+  position: absolute;
+  width: 1440px;
+  height: 50px;
+  left: 0px;
+  top: 0px;
+  background: #8E8BFD;
+}
+#header_about{
+  position: relative;
+  left: 1210px;
+  bottom: 112px;
+  color: #FFFFFF;
+}
+#header_contact{
+  position: relative;
+  left: 1220px;
+  bottom: 112px;
+  color: #FFFFFF;
+}
+.shortner_tool{
+  align-items: center;
+  position: relative;
+  top:60px
+}
+#shortner_heading{
+  text-align: center;
+}
+.shortner_inputs{
+  width: 900.2px;
+  height: 30px;
+  background: #ECECEC;
+  border-radius: 4px;
+  position: relative;
+  left: 80px;
+}
+.shortner_buttons{
+  background: #8E8BFD;
+  box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.25);
+  border-radius: 4px;
+  height: 30px;
+  width: 80px;
+  /*font-family: 'Nunito Sans';*/
+  font-style: normal;
+  font-weight: 100;
+  font-size: 17.5px;
+  line-height: 27px;
+  align-items: center;
+  text-align: center;
+  color: #FFFFFF;
+  position: relative;
+  left: 89px;
+  top:3px;
+}
+button:disabled,
+button[disabled]{
+  background: #9D9D9D;
+  box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.25);  
+  border-radius: 4px;
+  border: 1px solid #999999;
+}
+.grid {
+  display: flex;                       /* establish flex container */
+  flex-wrap: wrap;                     /* enable flex items to wrap */
+  justify-content: space-around;
+  
+}
+.cell {
+  position: relative;
+  top:100px;
+  flex: 0 0 25%;                       /* don't grow, don't shrink, width */
+  height: 50px;
+  margin-bottom: 5px;
+  background-color: #FFFFFF;
+  color: #272727;
+  text-align: center;
+  /*
+  font-family: 'Nunito Sans';
+  font-style: normal;
+  font-weight: 200;
+  font-size: 22px;
+  line-height: 30px;
+  */
+}
+/*
+.cell:nth-child(n) {
+  background-color: #FFFFFF;
+  border-left: 3px solid #dddddd;
+}*/
+.cell:nth-child(2n) {
+  background-color: #FFFFFF;
+  border-left: 2px solid burlywood
+}
+.cell:nth-child(3n) {
+  background-color: #FFFFFF;
+  color: #272727;
+  border-left: 2px solid burlywood
+}
+.cell span {
+  flex: 1;
+  padding: 0.5em;/* add some padding ?*/
+  text-align: center;
+  border-right: 10px solid #C4C4C4;
+}
+#footer_social{
+  position: absolute;
+  width: 150px;
+  height: 16px;
+  left: calc(50% - 150px/2 + 626px);
+  top: calc(50% - 16px/2 + 730.5px);
+}
+/*
+.footer{
+  position: absolute;
+  width: 1440px;
+  height: 50px;
+  left: 0px;
+  top: 1461px;
+}
+.footer_heading{
+  position: absolute;
+  width: 98px;
+  height: 30px;
+  left: 56px;
+  bottom: 10px;
+
+  font-family: 'Nunito Sans';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 30px;
+  identical to box height 
+
+  display: flex;
+  align-items: center;
+
+  color: #FFFFFF;
+}
+#footer_social{
+  position: absolute;
+  width: 150px;
+  height: 16px;
+  left: calc(50% - 150px/2 + 626px);
+  top: calc(50% - 16px/2 + 730.5px);
+}
+#footer_text{
+  position: absolute;
+  width: 340px;
+  height: 24px;
+  left: 550px;
+  bottom: 13px;
+  font-family: 'Nunito Sans';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 30px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: #FFFFFF;
+
+}
+.footer_logo{
+  position: absolute;
+  width: 135px;
+  height: 30px;
+  left: 19px;
+  top: 1471px;
+
+}
+*/
+#vector{
+  position: absolute;
+  height: 105px;
+  left: 1.32%;
+  right: 96.95%;
+  bottom: 13px;
+  background: #FFFFFF;
+}
+.hero_section_img{
+  position: relative;
+  top:80px;
+  left: 60px;
+  width: 1190px;
+}
+/*
+.hero_section{
+  background: #E5E5E5;
+}
+.item{
+  position: absolute;
+  left: 0%;
+  right: 0%;
+  top: 6.25%;
+  bottom: 6.25%;
+  background: #FFFFFF;
+}
+*/
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
