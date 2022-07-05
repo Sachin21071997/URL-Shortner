@@ -15,6 +15,7 @@ function URLshortnertool() {
       try{
         const response = await axios.post('http://localhost:3002/api/urls',{longUrl})
         const data = response.data.id;
+        console.log(data);
         setshortUrl(data);
         copyUrl();
       }

@@ -14,15 +14,8 @@ router.post('/',(req,res)=>{
     if(!validUrl.isUri(baseUrl)){
         res.status(401).send('Invalid base URL');
     }
-    /*
-    let url = await Url.findOne({
-        longUrl
-    })
-    if(url){
-        res.status(201).send({id:url.urlCode});
-    }*/
     if(validUrl.isUri(longUrl)){
-        const shortUrl = baseUrl + '/' + urlCode;
+        const shortUrl = baseUrl + '/api/urls/' + urlCode;
         const url_entry = new Url({
         longUrl,
         shortUrl,
