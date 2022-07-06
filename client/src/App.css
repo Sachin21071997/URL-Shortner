@@ -172,6 +172,7 @@ button[disabled]{
 .history_grid{
   position: relative;
   top:100px;
+  height: 60px;
   display: grid;
   justify-content: center;
   grid-template-columns: 3fr 2fr 1fr;
@@ -198,6 +199,7 @@ button[disabled]{
   height: 30px;
   width: 80px;
   color: #FFFFFF;
+  font-size: 14px;
   border-radius: 4px;
   font-family: 'Nunito Sans';
   position: relative;

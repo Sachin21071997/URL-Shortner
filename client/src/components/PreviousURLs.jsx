@@ -43,7 +43,7 @@ function PreviousURLs(){
                                 {shortUrl};
                             </span>
                             <span className='history_cell'>
-                                <button onClick={copy_function} className='copy_button'>Copy URL <i class="fa fa-copy"></i></button>
+                                <button onClick={copy_function} className='copy_button'>Copy<i class="fa fa-copy"></i></button>
                             </span>
                          </div>
                     </span>
