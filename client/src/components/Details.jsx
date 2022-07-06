@@ -5,7 +5,7 @@ function Details_section(){
             <div className='grid'>
                 <span className='cell'>
                     <h2>Why a shortened URL?</h2>
-                    <p>Shorter URLs takes up much less space when compared to the original ones. Hence ,it is easier to share shorter versions that the original ones</p>
+                    <p>Shorter URLs takes up much less space when compared to the original ones. Hence ,it is easier to share shorter versions than the original ones</p>
                 </span>
                 <span className='cell'>
                     <h2>How to use short.ly?</h2>

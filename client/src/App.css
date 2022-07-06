@@ -1,68 +1,46 @@
 .App {
   text-align: center;
 }
-.footer{
-  position: absolute;
-  width: 1440px;
-  height: 50px;
-  
-  left: 0px;
-  top: 1461px;
-  background: #272727;
-}
-#footer_logo{
+body {
   position: relative;
-  top:10px;
+  height: 150vh;
+  box-sizing: border-box;
+}
+.footer {
+  background-color: #282c34;
+  position: absolute;
+  width: 100%;
+  height: fit-content;
+  bottom: 0;
+  color: #fff;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+#footer_logo {
+  position: relative;
+  top: 12px;
   left: 10px;
 }
-#footer_heading{
+#dev_info{
   position: relative;
-  left: 50px;
-  bottom: 45px;
-  font-family: 'Nunito Sans';
-  font-style: normal;
-  font-weight: 200;
-  font-size: 22px;
-  line-height: 30px;
-/* identical to box height */
-  display: flex;
-  align-items: center;
-  color: #FFFFFF;
+  left: 250px;
 }
-#footer_text{
-  position: relative;
-  left: 550px;
-  bottom: 94px;
 
-  font-family: 'Nunito Sans';
-  font-style: normal;
-  font-weight: 200;
-  font-size: 22px;
-  line-height: 30px;
-  display: flex;
-  align-items: center;
-  text-align: center;
-  color: #FFFFFF;
-}
-.footer_social{
-  left:400px;
-  bottom:100px;
-}
-.LinkedIn{
-  height: 25px;
-  width: 30px;
-  /*width: 20px;*/
+.footer_text{
   position: relative;
-  display: flex;
-  left: 1200px;
-  bottom: 145px;
+  right:400px ;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
 }
-.Github{
-  height: 25px;
+
+.footer_links{
+  justify-self: end;
+}
+
+.footer_links img{
   position: relative;
-  display: flex;
-  left: 1240px;
-  bottom: 170px;
+  top:2px;
+  height: 50px;
 }
 .ToolName{
   font-family: 'Nunito Sans';
@@ -85,6 +63,8 @@
 .header{
   position: absolute;
   width: 1440px;
+  border:none;
+  padding: 0%;
   height: 50px;
   left: 0px;
   top: 0px;
@@ -144,39 +124,39 @@ button[disabled]{
   border: 1px solid #999999;
 }
 .grid {
-  display: flex;                       /* establish flex container */
-  flex-wrap: wrap;                     /* enable flex items to wrap */
-  justify-content: space-around;
-  
+  display: grid;                       
+  justify-content: center;
+  grid-template-columns: 33% 33% 33%;
+  margin-left: 0.5%;
+  margin-right: 0.5%;
 }
 .cell {
+  
   position: relative;
-  top:100px;
-  flex: 0 0 25%;                       /* don't grow, don't shrink, width */
-  height: 50px;
-  margin-bottom: 5px;
+  top:100px;    
+  height: fit-content;               
   background-color: #FFFFFF;
   color: #272727;
   text-align: center;
-  /*
-  font-family: 'Nunito Sans';
-  font-style: normal;
-  font-weight: 200;
-  font-size: 22px;
-  line-height: 30px;
-  */
+  
 }
-/*
+
 .cell:nth-child(n) {
   background-color: #FFFFFF;
-  border-left: 3px solid #dddddd;
-}*/
+  margin-right: 20px; 
+  margin-left: 20px;
+  
+}
 .cell:nth-child(2n) {
   background-color: #FFFFFF;
+  margin-right: 20px; 
+  margin-left: 20px;
   border-left: 2px solid burlywood
 }
 .cell:nth-child(3n) {
   background-color: #FFFFFF;
+  margin-right: 20px; 
+  margin-left: 0px; 
   color: #272727;
   border-left: 2px solid burlywood
 }
@@ -186,73 +166,22 @@ button[disabled]{
   text-align: center;
   border-right: 10px solid #C4C4C4;
 }
-#footer_social{
-  position: absolute;
-  width: 150px;
-  height: 16px;
-  left: calc(50% - 150px/2 + 626px);
-  top: calc(50% - 16px/2 + 730.5px);
+.history_grid{
+  display: grid;
+  justify-content: center;
+  grid-template-columns: 3fr 2fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
 }
-/*
-.footer{
-  position: absolute;
-  width: 1440px;
-  height: 50px;
-  left: 0px;
-  top: 1461px;
-}
-.footer_heading{
-  position: absolute;
-  width: 98px;
-  height: 30px;
-  left: 56px;
-  bottom: 10px;
-
-  font-family: 'Nunito Sans';
-  font-style: normal;
-  font-weight: 600;
-  font-size: 22px;
-  line-height: 30px;
-  identical to box height 
-
-  display: flex;
-  align-items: center;
-
-  color: #FFFFFF;
-}
-#footer_social{
-  position: absolute;
-  width: 150px;
-  height: 16px;
-  left: calc(50% - 150px/2 + 626px);
-  top: calc(50% - 16px/2 + 730.5px);
-}
-#footer_text{
-  position: absolute;
-  width: 340px;
-  height: 24px;
-  left: 550px;
-  bottom: 13px;
-  font-family: 'Nunito Sans';
-  font-style: normal;
-  font-weight: 600;
-  font-size: 22px;
-  line-height: 30px;
-  display: flex;
-  align-items: center;
+.cell {
+  position: relative;
+  top:100px;    
+  height: fit-content;               
+  background-color: #FFFFFF;
+  color: #272727;
   text-align: center;
-  color: #FFFFFF;
-
+  
 }
-.footer_logo{
-  position: absolute;
-  width: 135px;
-  height: 30px;
-  left: 19px;
-  top: 1471px;
 
-}
-*/
 #vector{
   position: absolute;
   height: 105px;
@@ -267,19 +196,7 @@ button[disabled]{
   left: 60px;
   width: 1190px;
 }
-/*
-.hero_section{
-  background: #E5E5E5;
-}
-.item{
-  position: absolute;
-  left: 0%;
-  right: 0%;
-  top: 6.25%;
-  bottom: 6.25%;
-  background: #FFFFFF;
-}
-*/
+
 .App-logo {
   height: 40vmin;
   pointer-events: none;

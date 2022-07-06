@@ -7,7 +7,7 @@ import PreviousURLs from './components/PreviousURLs';
 //import URLhistory from '/components/URLhistory'
 import Footer from './components/Footer';
 import './App.css';
-
+//<PreviousURLs/>
 
 function App() {
   return (
@@ -16,6 +16,7 @@ function App() {
       <HeroSection/>
       <URLshortnertool/>
       <Details/>
+      <PreviousURLs/>
       <Footer/>
 
     </div>

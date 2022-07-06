@@ -8,7 +8,7 @@ const Url = require('../models/UrlModel');
 const baseUrl = 'http:localhost:3002';
 //Shortening a URL
 router.post('/',(req,res)=>{
-    console.log(req.body)
+    //console.log(req.body)
     const {longUrl} = req.body;
     const urlCode = short();
     if(!validUrl.isUri(baseUrl)){
@@ -54,7 +54,7 @@ router.get('/',(req,res)=>{
         for(let i=0;i<result.length;i++){
             const url_info = {};
             url_info.longUrl = result[i].longUrl;
-            url_info.id = result[i].urlCode;
+            url_info.shortUrl = result[i].shortUrl;
             console.log(url_info);
             resp_info.push(url_info);
             
