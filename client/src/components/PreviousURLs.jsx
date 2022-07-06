@@ -1,7 +1,9 @@
 import React from 'react';
 import axios from 'axios'
 import { useState,useEffect } from "react";
+import copy from "copy-to-clipboard";
 function PreviousURLs(){
+    const [copyUrl,setcopyUrl] = useState("");
     const [url_history, seturl_history] = useState([]);
     function response_handler(){
         const response = axios.get('http://localhost:3002/api/urls/').then(result => {
@@ -21,15 +23,16 @@ function PreviousURLs(){
     useEffect(() => { 
         response_handler();
     },[]);
-    
+    function copy_function(){ // need to be written
+        //copy(shortUrl);
+    }
     
     return (
         <div class="history">
-            <h2>Previous URLs</h2>
+            <h2 id="history_heading">Previous URLs</h2>
         {
             url_history.map((element,index) => {
                 const {longUrl,shortUrl} = element;
-                console.log("hello");
                 return (
                     <span key={index} >
                         <div className='history_grid'>
@@ -40,7 +43,7 @@ function PreviousURLs(){
                                 {shortUrl};
                             </span>
                             <span className='history_cell'>
-                                <button className='copy_button'>Copy URL <i class="fa fa-copy"></i></button>
+                                <button onClick={copy_function} className='copy_button'>Copy URL <i class="fa fa-copy"></i></button>
                             </span>
                          </div>
                     </span>
