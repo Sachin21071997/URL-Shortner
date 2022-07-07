@@ -41,7 +41,8 @@ body {
 .footer_links img{
   position: relative;
   top:6px;
-  height: 40px;
+  height: 25px;
+  margin: 10px;
 }
 .ToolName{
   font-family: 'Nunito Sans';
@@ -114,8 +115,15 @@ body {
   text-align: center;
   color: #FFFFFF;
   position: relative;
-  left: 89px;
-  top:3px;
+  left: 85px;
+  top:2px;
+  
+}
+.copy_text{
+  display: block;
+  pointer-events: none;  
+  padding: 2px;
+ 
 }
 button:disabled,
 button[disabled]{
@@ -173,7 +181,7 @@ button[disabled]{
   height: 60px;
   display: grid;
   justify-content: center;
-  grid-template-columns: 3fr 2fr 1fr;
+  grid-template-columns: 45% 45% 10%;
   grid-template-rows: 1fr 1fr 1fr;
   row-gap: 0px;
   box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.25);
@@ -184,7 +192,17 @@ button[disabled]{
   height: 20px;              
   background-color: #FFFFFF;
   color: black;
-  text-align: center;
+  display: flex;
+  margin: 0%;
+  padding: 0px;
+}
+.history_cell :nth-child(3n) {
+  height: 20px;              
+  background-color: #FFFFFF;
+  color: black;
+  display: flex;
+  margin: 0%;
+  padding: 0px;
 }
 
 .history h2{
@@ -211,6 +229,7 @@ button[disabled]{
   left: 60px;
   width: 1190px;
 }
+
 
 .App-logo {
   height: 40vmin;

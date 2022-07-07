@@ -43,9 +43,8 @@ function PreviousURLs() {
                   onClick={() => {
                     copy(shortUrl);
                   }}
-                  className="copy_button"
-                >
-                  Copy<i class="fa fa-copy"></i>
+                  className="copy_button">
+                  Copy <i class="fas fa-copy"></i>
                 </button>
               </span>
             </div>

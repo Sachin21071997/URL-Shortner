@@ -12,7 +12,20 @@ export default[
         href: "https://github.com/Sachin21071997",
         title:"Github"
     },
-    
+    /*
+    {
+        alt : "ResearchGate",
+        src : "../components/images/researchgate_icon.png",
+        href: "https://www.researchgate.net/profile/Sachin-Beejawat",
+        title:"ResearchGate"
+    },
+    {
+        alt : "GoogleScholar",
+        src : "../components/images/researchgate_icon.png",
+        href: "https://scholar.google.com/citations?user=gXJqmoQAAAAJ&hl=en",
+        title:"GoogleScholar"
+    },
+    */
     
     
 ]
