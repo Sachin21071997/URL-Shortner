@@ -12,7 +12,6 @@ body {
   top:100px;
   width: 100%;
   height: fit-content;
-  
   color: #fff;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -50,39 +49,38 @@ body {
   font-weight: 200;
   font-size: 28px;
   line-height: 38px;
-  display: flex;
+  /* display: inline-block; */
   align-items: center;
   color: #FFFFFF;
+  display: inline-block;
+  margin-left: 20px;
   position: relative;
-  bottom: 56px;
-  left: 50px;
+  bottom: 20px;
+  left: 3px;
+}
+.links{
+  display: inline-block;
+  position: relative;
+  left: 77%;
+  bottom: 20px;
+}
+.links a{
+  color: #fff;
+  text-decoration: none;
+  margin: 15px;
 }
 .header_logo{
   position: relative;
   left: 10px;
-  top:10px;
+  bottom:15px;
 }
 .header{
-  position: absolute;
-  width: 1440px;
-  border:none;
-  padding: 0%;
+  /* position: absolute; */
+  width: 100%;
   height: 50px;
-  left: 0px;
-  top: 0px;
+  margin: 0;
+  padding: 0%;
   background: #8E8BFD;
-}
-#header_about{
-  position: relative;
-  left: 1210px;
-  bottom: 112px;
-  color: #FFFFFF;
-}
-#header_contact{
-  position: relative;
-  left: 1220px;
-  bottom: 112px;
-  color: #FFFFFF;
 }
 .shortner_tool{
   align-items: center;
@@ -171,7 +169,7 @@ button[disabled]{
 }
 .history_grid{
   position: relative;
-  top:100px;
+  top:10px;
   height: 60px;
   display: grid;
   justify-content: center;
@@ -187,12 +185,12 @@ button[disabled]{
   background-color: #FFFFFF;
   color: black;
   text-align: center;
-  
 }
-#history_heading{
-  top:100px;
-  align-items: center;
+
+.history h2{
+  text-align: center;
 }
+
 .copy_button{
   background: #8E8BFD;
   box-shadow: 0px 0px 2px rgb(0 0 0 / 25%);
@@ -209,7 +207,7 @@ button[disabled]{
 .hero_section_img{
   position: relative;
   height: 300px;
-  top:80px;
+  top: 30px;
   left: 60px;
   width: 1190px;
 }

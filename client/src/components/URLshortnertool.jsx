@@ -6,6 +6,9 @@ function URLshortnertool() {
     const [longUrl, setlongUrl] = useState("");
     const [shortUrl,setshortUrl] = useState("");
     const [copied, setCopied] = useState(true);
+    function copy(text) {
+        navigator.clipboard.writeText(text);
+    }
     const copyUrl = () => {
         copy(shortUrl);
         setCopied(false);
