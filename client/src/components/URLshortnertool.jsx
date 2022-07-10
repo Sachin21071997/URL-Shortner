@@ -1,6 +1,6 @@
 import React from "react";
 import { useState } from "react";
-import axios from "axios";
+import {axiosInstance} from "../config";
 import copy from "copy-to-clipboard";
 function URLshortnertool() {
   const [longUrl, setlongUrl] = useState("");
@@ -13,7 +13,7 @@ function URLshortnertool() {
   const handleSubmit = async (event) => {
     event.preventDefault();
     try {
-      const response = await axios.post("http://localhost:3002/api/urls", {
+      const response = await axiosInstance.post("http://localhost:3002/api/urls", {
         longUrl,
       });
       const data = response.data.id;

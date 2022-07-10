@@ -1,12 +1,12 @@
 import React from "react";
-import axios from "axios";
+import {axiosInstance} from "../config";
 import { useState, useEffect } from "react";
 import copy from "copy-to-clipboard";
 function PreviousURLs() {
   const [copyUrl, setcopyUrl] = useState("");
   const [url_history, seturl_history] = useState([]);
   function response_handler() {
-    const response = axios
+    const response = axiosInstance
       .get("http://localhost:3002/api/urls/")
       .then((result) => {
         seturl_history(result.data);
