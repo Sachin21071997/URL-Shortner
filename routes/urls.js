@@ -32,7 +32,7 @@ router.post('/',(req,res)=>{
     
 
 })
-/*
+
 //Redirecting Short URLs to Original URLs
 router.get('/:short_url',(req,res)=>{
     let userurl= req.params.short_url;
@@ -45,7 +45,7 @@ router.get('/:short_url',(req,res)=>{
     }
         
 
-});*/
+});
 //.catch(res.status(404).send("URL is invalid"));
 //Showing List of Shortened URLs
 router.get('/',(req,res)=>{
