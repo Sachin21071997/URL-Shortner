@@ -36,7 +36,7 @@ function PreviousURLs() {
             <div className="history_grid">
               <span className="history_cell">{longUrl}</span>
               <span id="myInput" className="history_cell">
-                {shortUrl};
+                {shortUrl}
               </span>
               <span className="history_cell">
                 <button
