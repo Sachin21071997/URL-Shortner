@@ -13,7 +13,7 @@ function URLshortnertool() {
   const handleSubmit = async (event) => {
     event.preventDefault();
     try {
-      const response = await axiosInstance.post("http://localhost:3002/api/urls", {
+      const response = await axiosInstance.post("https://urlshortnershortly.herokuapp.com/api/urls", {
         longUrl,
       });
       const data = response.data.id;

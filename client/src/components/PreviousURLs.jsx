@@ -7,7 +7,7 @@ function PreviousURLs() {
   const [url_history, seturl_history] = useState([]);
   function response_handler() {
     const response = axiosInstance
-      .get("http://localhost:3002/api/urls/")
+      .get("https://urlshortnershortly.herokuapp.com/api/urls/")
       .then((result) => {
         seturl_history(result.data);
         /*
