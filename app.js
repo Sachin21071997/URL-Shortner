@@ -11,7 +11,7 @@ const connection = require('./config/config')
 connection.once('open', () => console.log('DB Connected'))
 connection.on('error', () => console.log('Error'))
 
-app.use('/', require('./routes/urls'))
+app.use('/api/urls', require('./routes/urls'))
 
 app.use(express.static(path.join(__dirname, "/client/build")));
 
