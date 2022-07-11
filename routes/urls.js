@@ -5,7 +5,7 @@ const short = require('shortid');
 // creating express route handler
 const router = express.Router();
 const Url = require('../models/UrlModel');
-const baseUrl = 'http:localhost:3002';
+const baseUrl = 'https://urlshortnershortly.herokuapp.com';
 //Shortening a URL
 router.post('/',(req,res)=>{
     //console.log(req.body)
