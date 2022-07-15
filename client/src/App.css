@@ -122,7 +122,6 @@ body {
 .copy_text{
   display: block;
   pointer-events: none;
-  z-index: 1;
   padding: 2px;
  
 }
@@ -135,7 +134,8 @@ button[disabled]{
 }
 .grid {
   position: relative;
-  display: grid;                       
+  display: grid;   
+  z-index: -1;                    
   justify-content: center;
   grid-template-columns: 33% 33% 33%;
   margin-left: 0.5%;
