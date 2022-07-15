@@ -10,7 +10,7 @@ function URLshortnertool() {
     copy(shortUrl);
     setCopied(false);
   };
-  const handleSubmit = async (event) => {
+  const handleSubmit = async(event) => {
     event.preventDefault();
     try {
       const response = await axiosInstance.post("https://urlshortnershortly.herokuapp.com/api/urls", {
