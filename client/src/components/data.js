@@ -9,7 +9,7 @@ export default[
     {
         alt : "Github",
         src :"https://w7.pngwing.com/pngs/914/758/png-transparent-github-social-media-computer-icons-logo-android-github-logo-computer-wallpaper-banner.png",
-        href: "https://github.com/Sachin21071997",
+        href: "https://github.com/Sachin21qdev",
         title:"Github"
     },
     /*
